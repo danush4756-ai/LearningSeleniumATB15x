@@ -27,9 +27,9 @@ public class Selenium001 {
         driver.quit();
 
         WebDriver driver2 = new ChromeDriver();
-        driver2 = new EdgeDriver(); // 97% -
-        driver2 = new FirefoxDriver(); // 97% -
-        driver2 = new SafariDriver(); // 97% -
+        driver2 = new EdgeDriver();
+        driver2 = new FirefoxDriver();
+        driver2 = new SafariDriver();
 
         RemoteWebDriver driver1 = new FirefoxDriver();
 
