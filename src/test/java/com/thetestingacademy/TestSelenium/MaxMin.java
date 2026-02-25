@@ -8,5 +8,5 @@ public class MaxMin {
         driver.manage().window().maximize();
         driver.manage().window().minimize();
         driver.quit();
-    }
+     }
 }
