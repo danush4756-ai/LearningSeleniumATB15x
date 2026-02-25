@@ -6,7 +6,6 @@ public class MaxMin {
         WebDriver driver = new FirefoxDriver();
         driver.get("https://google.com");
         driver.manage().window().maximize();
-        driver.manage().window().minimize();
-        driver.quit();
+        driver.manage().window().minimize(); //Minimize the browser window to the taskbar
      }
 }
