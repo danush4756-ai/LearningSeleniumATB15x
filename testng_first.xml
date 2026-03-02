@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/DELL/IdeaProjects/LearningSeleniumATB15x">
-        <classes><class name="com.thetestingacademy.TestSelenium.Assertion_TestNG">
-            <methods>
-                <include name="test_selenium_01"/>
-            </methods>
-        </class>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite1" verbose="1">
+    <test name="Assertion Check">
+        <classes >
+            <class name="com.thetestingacademy.TestSelenium.Assertion_TestNG">
+            </class>
         </classes>
     </test>
 </suite>
