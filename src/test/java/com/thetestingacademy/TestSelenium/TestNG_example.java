@@ -1,0 +1,14 @@
+package com.thetestingacademy.TestSelenium;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+public class TestNG_example {
+    @Test
+    public void test_Selenium_app_vwo(){
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://app.vwo.com");
+        Assert.assertEquals(driver.getTitle(),"Login - VWO");
+        driver.quit();
+    }
+}

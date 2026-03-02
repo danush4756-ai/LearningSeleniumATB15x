@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/DELL/IdeaProjects/LearningSeleniumATB15x/src/test/java/com/thetestingacademy/TestSelenium/TestNG_example.java">
+        <classes>
+            <class name="com.thetestingacademy.TestSelenium.TestNG_example">
+                <methods>
+                    <include name="test_Selenium_app_vwo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
