@@ -5,7 +5,8 @@ public class Close_vs_quit {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://google.com");
-        Thread.sleep(10000);
+        Thread.sleep(10000); /*waits for exactly 10 seconds (10,000 milliseconds) before moving
+        to the next line of code.*/
         // driver.close(); we usually don't use this in automation
 //        // Close - will close the current tab, not the session (not the all tabs)
         driver.quit();
