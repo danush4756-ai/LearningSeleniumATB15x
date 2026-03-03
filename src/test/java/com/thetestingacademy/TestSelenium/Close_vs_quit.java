@@ -13,6 +13,5 @@ public class Close_vs_quit {
 //        // Close - will close the current tab, not the session (not the all tabs)
         driver.quit();
         // It will close all the tabs. - session id == null
-
     }
 }
