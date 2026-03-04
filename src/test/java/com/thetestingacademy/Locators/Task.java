@@ -9,14 +9,16 @@ import org.testng.annotations.Test;
 
 public class Task {
     @Test
-    public void make_appointment() {
+    public void make_appointment() throws InterruptedException {
         //get url
         //WebDriver CURA = new ChromeDriver(); this is also correct but not best practice
         WebDriver driver = new ChromeDriver();
         driver.get("https://katalon-demo-cura.herokuapp.com/");
+        Thread.sleep(3000);
         //click on Make Appointment
         WebElement Make_appointment = driver.findElement(By.id("btn-make-appointment"));
 Make_appointment.click();
+        Thread.sleep(3000);
 //Enter username
         WebElement username = driver.findElement(By.id("txt-username"));
         username.sendKeys("John Doe");
@@ -26,6 +28,7 @@ Make_appointment.click();
         //click login button
         WebElement Login = driver.findElement(By.id("btn-login"));
         Login.click();
+        Thread.sleep(3000);
 //url compare
         Assert.assertEquals(driver.getCurrentUrl(), "https://katalon-demo-cura.herokuapp.com/#appointment");
         //check Make Appointment
