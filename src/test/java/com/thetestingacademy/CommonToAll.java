@@ -17,15 +17,15 @@ public class CommonToAll {
     public void closeBrowser(WebDriver driver){
         driver.quit();
     }
-    public void waitForVisibility(WebDriver driver, int timeInSeconds,String xpath){
+    public void waitForVisibilityXpath(WebDriver driver, int timeInSeconds,String xpath){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
     }
-    public void waitForVisibility(WebDriver driver,String xpath){
+    public void waitForVisibilityXpath(WebDriver driver,String xpath){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
     }
-    public void waitForTextToBePresent(WebDriver driver, int timeInSeconds,String xpath,String text){
+    public void waitForTextToBePresentXpath(WebDriver driver, int timeInSeconds,String xpath,String text){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
         wait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.xpath(xpath)),text));
     }
@@ -41,7 +41,7 @@ public class CommonToAll {
             throw new RuntimeException(e);
         }
     }
-    public void clickElementFound(String xpath){
+    public void clickElementFoundXpath(String xpath){
         WebElement element = driver.findElement(By.xpath(xpath));
         element.click();
     }
