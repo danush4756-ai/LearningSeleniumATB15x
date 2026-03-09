@@ -43,7 +43,7 @@ public class CommonToAll {
             throw new RuntimeException(e);
         }
     }
-    public void clickElementFoundXpath(String xpath){
+    public void clickElementFoundXpath(WebDriver driver, String xpath){
         WebElement element = driver.findElement(By.xpath(xpath));
         element.click();
     }
