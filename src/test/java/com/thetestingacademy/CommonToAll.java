@@ -30,6 +30,7 @@ public class CommonToAll {
     public void waitForAlert(WebDriver driver, int timeInSeconds){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
         wait.until(ExpectedConditions.alertIsPresent());
+        //You cannot use an XPath because the alert does not exist in the website's HTML code.
     }
     public void waitForJVM(int time){
         try {
