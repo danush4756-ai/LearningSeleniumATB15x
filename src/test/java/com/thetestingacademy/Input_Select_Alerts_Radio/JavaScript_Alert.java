@@ -1,5 +1,6 @@
 package com.thetestingacademy.Input_Select_Alerts_Radio;
 import com.thetestingacademy.CommonToAll;
+import com.thetestingacademy.CommonToAllEnhanced;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,7 +12,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import static com.thetestingacademy.WaitHelpers.waitForAlert;
 import static com.thetestingacademy.WaitHelpers.waitJVM;
-public class JavaScript_Alert extends CommonToAll {
+public class JavaScript_Alert extends CommonToAllEnhanced {
     @Test
     public void test_Alerts() {
         ChromeDriver driver = new ChromeDriver();

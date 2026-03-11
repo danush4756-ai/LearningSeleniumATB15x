@@ -1,5 +1,6 @@
 package com.thetestingacademy.SVG_Elements;
 import com.thetestingacademy.CommonToAll;
+import com.thetestingacademy.CommonToAllEnhanced;
 import com.thetestingacademy.WaitHelpers;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
@@ -7,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import java.util.List;
-public class SVG extends CommonToAll {
+public class SVG extends CommonToAllEnhanced {
         ChromeDriver driver;
         @Description("Verify that the on search with svg icon results are visible.")
         @Test

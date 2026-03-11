@@ -1,5 +1,6 @@
 package com.thetestingacademy.Selenium_waits;
 import com.thetestingacademy.CommonToAll;
+import com.thetestingacademy.CommonToAllEnhanced;
 import com.thetestingacademy.WaitHelpers;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
@@ -9,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import static com.thetestingacademy.WaitHelpers.checkVisibility;
 import static com.thetestingacademy.WaitHelpers.waitImplicitWait;
-public class Explicit_waits extends CommonToAll {
+public class Explicit_waits extends CommonToAllEnhanced {
     @Description("Verify  makemytrip opens with modal")
     @Test
     public void testCloseModal() {

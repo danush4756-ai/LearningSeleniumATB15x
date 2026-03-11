@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Task {
+public class Task_March_9_26 {
     @Test
     public void make_appointment() throws InterruptedException {
         //get url

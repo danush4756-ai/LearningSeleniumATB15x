@@ -1,5 +1,6 @@
 package com.thetestingacademy.Input_Select_Alerts_Radio;
 import com.thetestingacademy.CommonToAll;
+import com.thetestingacademy.CommonToAllEnhanced;
 import com.thetestingacademy.WaitHelpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-public class TestSelenium_Input_Checkbox_Radio extends CommonToAll {
+public class TestSelenium_Input_Checkbox_Radio extends CommonToAllEnhanced {
     @Test
     public void test_select() {
         // Select BOX - HTMLs
