@@ -16,10 +16,10 @@ public class Explicit_waits extends CommonToAllEnhanced {
     public void testCloseModal() {
         WebDriver driver = new ChromeDriver();
         openBrowser(driver,"https://www.makemytrip.com/");
-       waitForPresenceOfElementXpath(driver,"//span[@data-cy='closeModal']");
+       WaitPresenceOfElementAndClick(driver,By.xpath("//span[@data-cy='closeModal']"));
        /*waitForVisibility(driver,3,"//span[@data-cy='closeModal']"); If test fails use the above
         Expected condition*/
-       clickElementFoundXpath(driver, "//span[@data-cy='closeModal']");
+       //clickElementFoundXpath(driver, "//span[@data-cy='closeModal']");
       //  WebElement closeModel = driver.findElement(By.xpath("//span[@data-cy='closeModal']"));
         //closeModel.click();
         // static -
