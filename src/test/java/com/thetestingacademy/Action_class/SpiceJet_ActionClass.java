@@ -16,7 +16,8 @@ public class SpiceJet_ActionClass {
         Actions actions = new Actions(driver);
         actions
                 .moveToElement(origin).click().sendKeys("BLR")
-                .moveToElement(destination).sendKeys("DEL")
+                .moveToElement(destination).sendKeys("DEL")/*sometime .click will work, but sometimes
+                it will not be required*/
                 .build().perform();
     }
 }
