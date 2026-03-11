@@ -16,10 +16,6 @@ public class CommonToAll {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
     }
-    public void waitForPresenceOfElementXpath(WebDriver driver,String xpath) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(xpath)));
-    }
     public void waitForTextToBePresentXpath(WebDriver driver, int timeInSeconds,String xpath,String text){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
         wait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.xpath(xpath)),text));
@@ -35,9 +31,5 @@ public class CommonToAll {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-    }
-    public void clickElementFoundXpath(WebDriver driver, String xpath){
-        WebElement element = driver.findElement(By.xpath(xpath));
-        element.click();
     }
 }
