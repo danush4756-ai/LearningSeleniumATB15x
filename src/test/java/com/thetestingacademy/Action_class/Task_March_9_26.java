@@ -13,7 +13,7 @@ import java.time.Duration;
 public class Task_March_9_26 extends CommonToAllEnhanced {
     @Test
     public void Booking_com () throws InterruptedException {
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         openBrowser(driver , "https://www.booking.com/");
         WaitElementToBeClickableAndClick(driver, By.xpath("//button[@aria-label='Dismiss sign-in info.']"));
         clickElementFound(driver, By.xpath("//a[@id='flights']"));
