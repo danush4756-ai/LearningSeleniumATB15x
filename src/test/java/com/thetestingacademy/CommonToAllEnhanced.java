@@ -18,6 +18,9 @@ public class CommonToAllEnhanced {
     public void closeBrowser(WebDriver driver) {
         driver.quit();
     }
+    public void FindElementAndClick(WebDriver driver, By locator) {
+        driver.findElement(locator).click();
+    }
     public void WaitPresenceOfElementAndClick(WebDriver driver, By locator) {
         getWait(driver, 30)
                 //.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(xpath)))
