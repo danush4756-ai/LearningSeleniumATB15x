@@ -29,6 +29,6 @@ public class Task_March_9_26 extends CommonToAllEnhanced {
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.ENTER)
                 .build().perform();
-        FindElementAndClick(driver, By.xpath("//span[text() ='Search']"));
+        clickElementFound(driver, By.xpath("//span[text() ='Search']"));
     }
 }
