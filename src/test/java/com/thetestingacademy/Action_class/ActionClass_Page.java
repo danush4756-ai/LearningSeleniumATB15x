@@ -1,4 +1,4 @@
-package com.thetestingacademy.Selenium_waits;
+package com.thetestingacademy.Action_class;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
