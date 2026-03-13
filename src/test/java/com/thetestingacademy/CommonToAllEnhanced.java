@@ -18,8 +18,13 @@ public class CommonToAllEnhanced {
     public void closeBrowser(WebDriver driver) {
         driver.quit();
     }
-    public void FindElementAndClick(WebDriver driver, By locator) {
-        driver.findElement(locator).click();
+    public void clickElementFound(WebDriver driver, By locator) {
+        WebElement element = driver.findElement(locator);
+        element.click();
+    }
+    public void sendKeysToElementFound(WebDriver driver, By locator, String keys) {
+        WebElement element = driver.findElement(locator);
+        element.sendKeys(keys);
     }
     public void WaitPresenceOfElementAndClick(WebDriver driver, By locator) {
         getWait(driver, 30)
@@ -28,11 +33,6 @@ public class CommonToAllEnhanced {
                 .until(ExpectedConditions.presenceOfElementLocated(locator))
                 .click();
     }
-    public void clickElementFound(WebDriver driver, By locator) {
-        WebElement element = driver.findElement(locator);
-        element.click();
-    }
-
     public void WaitElementToBeClickableAndClick(WebDriver driver, By locator) {
         getWait(driver, 30)
                 .until(ExpectedConditions.elementToBeClickable(locator))
@@ -47,4 +47,14 @@ public class CommonToAllEnhanced {
                 .until(ExpectedConditions.visibilityOfElementLocated(locator))
         .click();
     }
-}
+    public void WaitForVisibilityAndClick(WebDriver driver, By locator, int time) {
+        getWait(driver, time)
+                .until(ExpectedConditions.visibilityOfElementLocated(locator))
+                .click();
+    }
+    public void WaitForVisibilityAndSendKeys(WebDriver driver, By locator, String Keys) {
+        getWait(driver, 30)
+                .until(ExpectedConditions.visibilityOfElementLocated(locator))
+                .sendKeys(Keys);
+    }
+    }
