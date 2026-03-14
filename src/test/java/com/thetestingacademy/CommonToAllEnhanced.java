@@ -33,6 +33,13 @@ public class CommonToAllEnhanced {
                 .until(ExpectedConditions.presenceOfElementLocated(locator))
                 .click();
     }
+    public void WaitPresenceOfElementAndSendKeys(WebDriver driver, By locator , String keys) {
+        getWait(driver, 30)
+                //.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(xpath)))
+                //convert the above to singular version so that .click will work
+                .until(ExpectedConditions.presenceOfElementLocated(locator))
+                .sendKeys(keys);
+    }
     public void WaitElementToBeClickableAndClick(WebDriver driver, By locator) {
         getWait(driver, 30)
                 .until(ExpectedConditions.elementToBeClickable(locator))
