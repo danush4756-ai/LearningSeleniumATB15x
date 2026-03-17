@@ -29,6 +29,7 @@ public class VWO_Complete_Singup_trial extends CommonToAllEnhanced {
         WaitForVisibilityAndClick(driver,By.xpath("//span[text()='Start a FREE TRIAL']"));
 //Get all open window handles (tabs) and store them in an ArrayList
         ArrayList<String> allTabs = new ArrayList<>(driver.getWindowHandles());
+        //Using ArrayList is not a good practice while working on real projects we should use set
 // Switch focus to the new tab (index 1 is the second tab)
         driver.switchTo().window(allTabs.get(1));
         WaitForVisibilityAndSendKeys(driver,By.xpath("//input[@data-qa='page-su-step1-v1-email']"), "namal56@gmail.com");
