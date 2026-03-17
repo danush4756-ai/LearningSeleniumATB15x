@@ -12,7 +12,7 @@ public class File_upload {
         WebElement uploadFileInput = driver.findElement(By.id("fileToUpload"));
         String user_dir_path = System.getProperty("user.dir");
         System.out.println(user_dir_path);
-        uploadFileInput.sendKeys(user_dir_path + "\\src\\test\\java\\com\\thetestingacademy\\data.json");
+        uploadFileInput.sendKeys(user_dir_path + "\\src\\test\\java\\com\\thetestingacademy\\FileUpload\\data.json");
         driver.findElement(By.name("submit")).click();
     }
 }
